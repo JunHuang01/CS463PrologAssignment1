@@ -1,0 +1,8 @@
+My Algorithm:
+
+It is a simple depth first search algorithm implemented in prolog.  at each visit of a node, it will retrive the node's value by using Tom Allen's position funciton back to back to retrieve the list of the list's value at that position, and see if it is a hall of a wall.
+
+
+What I learned: 
+
+What I've learned is that in order to effectively use prolog, one will need to understand it goes from a depth first search order to find matching rules in the program.  The variables in prolog once declared they would be set to constant.  And one needs to declare another variable to hold it if needs to compute on it.  The main control structure is recursive calls.  They are basically keeps triggering the rules in prolog since you have no way to implement a c plus plus style control structure.  Overall Prolog is really nice in the way it is purely logic, or semantic based language.  Which you declare the rules, and the program does the maigc of following your loose instruction unlike in other language I have used such as C++ or python where developer will have to specificy exact executions in serial order.
