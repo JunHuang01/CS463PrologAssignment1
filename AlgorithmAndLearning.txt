@@ -1,3 +1,7 @@
+Jun Huang
+CS463 Prolog Program 1
+10/31/2014
+
 My Algorithm:
 
 It is a simple depth first search algorithm implemented in prolog.  at each visit of a node, it will retrive the node's value by using Tom Allen's position funciton back to back to retrieve the list of the list's value at that position, and see if it is a hall of a wall.
