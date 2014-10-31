@@ -20,9 +20,14 @@ getPos(Res,XPos,YPos,Matrix):-
 %Print the path from beginning to end.
 printPath([]).
 printPath([H|T]):-
-	writeln(H),
-	printPath(T).
+	printPath(T),
+	writeln(H).
 
+%Print the total number of steps it took.
+printLength(L):-
+	length(L,Length),
+	writeln(Length : 'is the number of steps in the path'),nl.
+	
 
 %depth first search the matrix
 dfs(X0,Y0,X,Y,Matrix):-
@@ -45,7 +50,7 @@ traverseNeighbors(X0,Y0,X,Y0) :- X is X0 + 1.
 traverseNeighbors(X0,Y0,X,Y0) :- X is X0 - 1.
 
 
-mazepath(X0,Y0,X,Y,_,Path):- X0 = X, Y0=Y,printPath(Path). %found goal print the goal
+mazepath(X0,Y0,X,Y,_,Path):- X0 = X, Y0=Y,printPath(Path),printLength(Path). %found goal print the goal
 
 %visit all unvisited adjacent nodes.
 mazepath(X0,Y0,X,Y,Matrix,Visited):-
