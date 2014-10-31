@@ -4,7 +4,7 @@
 %Prolog Compiler: SWI-Prolog version 6.6.6 by Jan Wielemaker (jan@swi-prolog.org)
 
 %Tom Allens code of getting an element at X position in a list.
-position(X, 1, [X|_]).
+position(X, 0, [X|_]).
 position(X, Nplus1, [_|Tail]) :-
     position(X, N, Tail),
     Nplus1 is N + 1.

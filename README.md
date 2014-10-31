@@ -21,25 +21,24 @@ In case of can not find a valid path from start to end, it will not print anythi
 
 Example Input 1:
 
-mazepath(1,1,4,1,[[0, 0, 0, 0],
+mazepath(0,0,3,0,[[0, 0, 0, 0],
           [0, 1, 1, 0],
           [0, 1, 0, 0],
           [0, 1, 0, 1],
           [0, 0, 0, 0]],[]).
 
 Example Output 1:
-visited(1,2)
+visited(0,1)
+visited(0,2)
+visited(0,3)
 visited(1,3)
-visited(1,4)
-visited(2,4)
-visited(3,4)
-visited(3,3)
-visited(4,3)
-visited(5,3)
-visited(5,2)
-visited(5,1)
+visited(2,3)
+visited(2,2)
+visited(3,2)
+visited(4,2)
 visited(4,1)
-true .
+visited(4,0)
+visited(3,0)
 11:is the number of steps in the path
 
 
