@@ -17,3 +17,37 @@ the Maze is a list of list, for example  maze([[0, 0, 0, 0],
 In case of successfully finding a path, the program will print from the last node to the first node it visited in the traversing path.
 
 In case of can not find a valid path from start to end, it will not print anything.
+
+
+Example Input 1:
+
+mazepath(1,1,4,1,[[0, 0, 0, 0],
+          [0, 1, 1, 0],
+          [0, 1, 0, 0],
+          [0, 1, 0, 1],
+          [0, 0, 0, 0]],[]).
+
+Example Output 1:
+visited(4,1)
+visited(5,1)
+visited(5,2)
+visited(5,3)
+visited(4,3)
+visited(3,3)
+visited(3,4)
+visited(2,4)
+visited(1,4)
+visited(1,3)
+visited(1,2)
+true .
+
+
+Example Input 2:
+mazepath(1,1,6,1,[[0, 0, 0, 0],
+          [0, 1, 1, 0],
+          [0, 1, 0, 0],
+          [0, 1, 0, 1],
+          [0, 0, 0, 0]],[]).
+
+Example Outpu2:
+false.
